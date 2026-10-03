@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ErrorResponse",
+  "description": "The generic error body FastAPI's HTTPException produces for this API, e.g. BR03's 404 when a ticket is not found.",
+  "type": "object",
+  "required": ["detail"],
+  "additionalProperties": false,
+  "properties": {
+    "detail": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

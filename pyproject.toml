@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "northstar-service-desk"
 version = "0.1.0"
 description = "Week 1 starter: a deterministic IT service desk API for the AI QA Orchestration program."
-requires-python = ">=3.11,<3.13"
+#requires-python = ">=3.11,<3.13"
 dependencies = [
     "fastapi>=0.110,<1.0",
     "uvicorn[standard]>=0.29,<1.0",
@@ -17,6 +17,8 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "pytest>=8.0,<9.0",
+    "pytest-html>=4.0,<5.0",
+    "pytest-json-report>=1.5,<2.0",
 ]
 
 [tool.setuptools.packages.find]
